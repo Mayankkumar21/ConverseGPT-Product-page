@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="uisual" content="Made with Uisual (uisual.com)" />
+    <meta name="author" content="#" />
+    <meta name="description" content="#" />
+    <meta name="referrer" content="unsafe-url" />
+    <meta name="robots" content="index, follow" />
+    <!-- SPEED -->
+    <link rel="preconnect" href="https://res.cloudinary.com" />
+    <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <!-- LINK -->
+    <link rel="me" href="#" />
+    <link rel="canonical" href="#" />
+    <link rel="icon" type="image/png" href="" sizes="48x48" />
+    <!-- PERFORMANCE -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+    <link rel="preload" as="style" href="static\style.css" />
+    <link rel="stylesheet" href="static\style.css" />
+    <!-- TITLE -->
+    <title>ConverseGPT</title>
+    <h1 class="header-title">ConverseGPT</h1>
+  </head>
+
+  <body>
+    <header role="banner" class="ui-section-header">
+      <div class="ui-layout-container">
+        <div class="ui-section-header__layout ui-layout-flex">
+          <!-- LOGO -->
+          <a
+            href="https://github.com/Mayankkumar21/ConverseGPT-App"
+            role="link"
+            aria-label="#"
+          >
+            <img
+              src="static\github.png"
+              alt="#"
+              height="25"
+              width="25"
+              role="img"
+              aria-label="#"
+            />
+          </a>
+
+          <!-- MENU -->
+          <a href="https://twitter.com/Mayank_2107" role="link" aria-label="#">
+            <svg
+              viewBox="0 0 24 24"
+              height="18"
+              width="18"
+              fill="none"
+              stroke="#353535"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              role="img"
+              aria-label="#"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <section class="ui-section-content">
+        <div class="ui-layout-container">
+          <!-- COPYWRITING -->
+          <div class="ui-layout-column-6 ui-layout-column-center">
+            <h1>The Easiest Way to <br />Talk to Your AI</h1>
+            <p class="ui-text-intro">
+              Activate your local AI with a simple shortcut.<br />
+              Experience real-time assistance in any task without compromising
+              your privacy or workflow.
+            </p>
+            <!-- CTA -->
+            <div
+              class="ui-section-content--feature ui-layout-grid ui-layout-grid-3"
+              id="download-buttons"
+            >
+              <a
+                href="{{ url_for('handle_api_call', category='windows') }}"
+                class="ui-component-button ui-component-button-medium ui-component-button-primary"
+              >
+                <img
+                  src="static\windows-logo.png"
+                  alt="Windows Logo"
+                  width="20"
+                  height="20"
+                  style="filter: brightness(0) invert(1)"
+                />
+                Windows
+              </a>
+              <a
+                href="{{ url_for('handle_api_call', category='mac') }}"
+                class="ui-component-button ui-component-button-medium ui-component-button-primary"
+              >
+                <img
+                  src="static\mac-os-logo.png"
+                  alt="Mac Logo"
+                  width="20"
+                  height="20"
+                  style="filter: brightness(0) invert(1)"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp; Mac&nbsp;&nbsp;&nbsp;&nbsp;
+              </a>
+              <a
+                href="{{ url_for('handle_api_call', category='linux') }}"
+                class="ui-component-button ui-component-button-medium ui-component-button-primary"
+              >
+                <img
+                  src="static\linux-logo.png"
+                  alt="Linux Logo"
+                  width="20"
+                  height="20"
+                  style="filter: brightness(0) invert(1)"
+                />
+                &nbsp;&nbsp;&nbsp; Linux&nbsp;&nbsp;&nbsp;
+              </a>
+            </div>
+
+            <br />
+            <p class="ui-text-note">
+              <small>Available on Mac, Windows, and Linux.</small>
+            </p>
+          </div>
+          <!-- IMAGE -->
+          <img
+            src="static\sample.png"
+            loading="lazy"
+            alt="#"
+            class="ui-section-content--image"
+          />
+          <!-- FEATURE -->
+          <div
+            class="ui-section-content--feature ui-layout-grid ui-layout-grid-3"
+          >
+            <div>
+              <img
+                src="static\setting.png"
+                alt="#"
+                class="ui-section-content--icon"
+              />
+              <h3>Compatibility with Multiple Models</h3>
+              <p>
+                Versatile by design, our app supports leading AI models,
+                ensuring you have the best tool for any task.
+              </p>
+            </div>
+            <div>
+              <img
+                src="static\verified.png"
+                alt="#"
+                class="ui-section-content--icon"
+              />
+              <h3>Privacy first</h3>
+              <p>
+                Enjoy the peace of mind knowing your data and inquiries remain
+                confidential, with all processing done locally on your device.
+              </p>
+            </div>
+            <div>
+              <img
+                src="static\wifi.png"
+                alt="#"
+                class="ui-section-content--icon"
+              />
+              <h3>Works offline</h3>
+              <p>
+                Reliable AI assistance anytime, anywhere. Perfect for travelers
+                or those in remote locations, ensuring you're never without
+                support, regardless of internet access.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ui-section-close">
+        <div class="ui-layout-container">
+          <div class="ui-layout-column-6 ui-layout-column-center">
+            <h2>Ready to start?</h2>
+            <p class="ui-text-intro">More open source products coming soon.</p>
+            <!-- CTA -->
+            <div class="ui-component-cta ui-layout-flex">
+              <form
+                action="{{ url_for('store_email') }}"
+                method="post"
+                class="ui-component-form ui-layout-grid ui-layout-column-4"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  class="ui-component-input ui-component-input-medium"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="ui-component-button ui-component-button-medium ui-component-button-primary"
+                >
+                  Join Waitlist
+                </button>
+              </form>
+
+              <p class="ui-text-note">
+                <small>Available on Mac, Windows, and Linux.</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo" class="ui-section-footer">
+      <div class="ui-layout-container">
+        <div class="ui-section-footer__layout ui-layout-flex">
+          <!-- COPYRIGHT -->
+          <p class="ui-section-footer--copyright ui-text-note">
+            <small>&copy;Built by Mayank</small>
+          </p>
+          <!-- MENU -->
+          <a
+            href="http://www.github.com/Mayankkumar21"
+            role="link"
+            aria-label="#"
+            class="ui-text-note"
+            ><small>Github</small></a
+          >
+          <a
+            href="https://www.linkedin.com/in/mayank-kumar-5a2788191/"
+            role="link"
+            aria-label="#"
+            class="ui-text-note"
+            ><small>Linkedin</small></a
+          >
+          <a href="#" role="link" aria-label="#" class="ui-text-note"
+            ><small>Terms</small></a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
