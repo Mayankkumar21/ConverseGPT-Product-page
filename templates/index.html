@@ -30,6 +30,36 @@
     <!-- TITLE -->
     <title>ConverseGPT</title>
     <h1 class="header-title">ConverseGPT</h1>
+    <style>
+      /* Animation for header title */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .header-title {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      /* Scroll effect */
+      @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      .ui-section-content--feature {
+        animation: slideInFromLeft 1s ease-in-out;
+      }
+    </style>
   </head>
 
   <body>
@@ -80,6 +110,7 @@
           <!-- COPYWRITING -->
           <div class="ui-layout-column-6 ui-layout-column-center">
             <h1>The Easiest Way to <br />Talk to Your AI</h1>
+            <br />
             <p class="ui-text-intro">
               Activate your local AI with a simple shortcut.<br />
               Experience real-time assistance in any task without compromising
@@ -91,7 +122,7 @@
               id="download-buttons"
             >
               <a
-                href="#"
+                href="https://drive.google.com/drive/folders/1vEkTAfnDm4omnNq-yiJhro5s8MZnTraQ?usp=sharing"
                 class="ui-component-button ui-component-button-medium ui-component-button-primary"
               >
                 <img
@@ -104,7 +135,7 @@
                 Windows
               </a>
               <a
-                href="{{ url_for('handle_api_call', category='mac') }}"
+                href="https://drive.google.com/drive/folders/1Jhw62MvHDkL7fl9q5Ly5kmdIQWBh8Z11?usp=sharing"
                 class="ui-component-button ui-component-button-medium ui-component-button-primary"
               >
                 <img
@@ -117,7 +148,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp; Mac&nbsp;&nbsp;&nbsp;&nbsp;
               </a>
               <a
-                href="#"
+                href="https://drive.google.com/drive/folders/1WjQ8QAGSDjzTAsvc7oOXuUEwqpwLNi9L?usp=sharing"
                 class="ui-component-button ui-component-button-medium ui-component-button-primary"
               >
                 <img
@@ -252,5 +283,16 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Scroll animation
+      window.addEventListener("scroll", function () {
+        var sectionClose = document.querySelector(".ui-section-close");
+        var sectionClosePosition = sectionClose.getBoundingClientRect().top;
+        var screenPosition = window.innerHeight / 1.2;
+        if (sectionClosePosition < screenPosition) {
+          sectionClose.classList.add("active");
+        }
+      });
+    </script>
   </body>
 </html>
