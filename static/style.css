@@ -647,5 +647,25 @@ html {
   .header-title {
     text-align: center;
     font-size: 70px;
-    margin-top: 65px;
+    margin-top: 85px;
 }
+.ai-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    .ui-layout-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+  
+    .ui-section-content--image {
+      order: 1;
+    }
+  
+    .ui-section-content--feature {
+      order: 0;
+    }
+  }
