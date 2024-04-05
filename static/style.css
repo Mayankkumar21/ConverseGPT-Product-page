@@ -654,18 +654,4 @@ html {
     height: auto;
     margin-bottom: 40px;
   }
-  @media screen and (min-width: 768px) {
-    .ui-layout-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
-    }
   
-    .ui-section-content--image {
-      order: 1;
-    }
-  
-    .ui-section-content--feature {
-      order: 0;
-    }
-  }
