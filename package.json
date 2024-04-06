@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "electron-installer-dmg": "^4.0.0"
+  }
+}
